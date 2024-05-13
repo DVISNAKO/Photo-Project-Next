@@ -1,4 +1,12 @@
-import { dzivniekuPhoto, galeryPhoto, gimenesPhoto, lovePhoto, pasakumuPhoto, sasniegumuPhoto, viriesuPhoto } from "./const-images";
+import {
+  dzivniekuPhoto,
+  galeryPhoto,
+  gimenesPhoto,
+  lovePhoto,
+  pasakumuPhoto,
+  sasniegumuPhoto,
+  viriesuPhoto,
+} from "./const-images";
 import { sieviešuPhoto } from "./const-images";
 
 export const galeryData = [
@@ -51,70 +59,69 @@ export const SieviešuData = [
   { title: "sieviešuphoto6", img: sieviešuPhoto[5], id: 6 },
 ];
 
-
 //Dzivnieku photo
 
 export const DzivniekuData = [
-    { title: "dzivniekuphoto1", img: dzivniekuPhoto[3], id: 1 },
-    { title: "dzivniekuphoto2", img: dzivniekuPhoto[4], id: 2 },
-    { title: "dzivniekuphoto3", img: dzivniekuPhoto[5], id: 3 },
-    { title: "dzivniekuphoto4", img: dzivniekuPhoto[2], id: 4 },
-    { title: "dzivniekuphoto5", img: dzivniekuPhoto[1], id: 5 },
-    { title: "dzivniekuphoto6", img: dzivniekuPhoto[0], id: 6 },
-
-]
+  { title: "dzivniekuphoto1", img: dzivniekuPhoto[3], id: 1 },
+  { title: "dzivniekuphoto2", img: dzivniekuPhoto[4], id: 2 },
+  { title: "dzivniekuphoto3", img: dzivniekuPhoto[5], id: 3 },
+  { title: "dzivniekuphoto4", img: dzivniekuPhoto[2], id: 4 },
+  { title: "dzivniekuphoto5", img: dzivniekuPhoto[1], id: 5 },
+  { title: "dzivniekuphoto6", img: dzivniekuPhoto[0], id: 6 },
+];
 
 //Vierišu photo
 
 export const ViriesuData = [
-    { title: "viriesuphoto1", img: viriesuPhoto[0], id: 1 },
-    { title: "viriesuphoto2", img: viriesuPhoto[1], id: 2 },
-    { title: "viriesuphoto3", img: viriesuPhoto[2], id: 3 },
-    { title: "viriesuphoto4", img: viriesuPhoto[3], id: 4 },
-    { title: "viriesuphoto5", img: viriesuPhoto[4], id: 5 },
-    { title: "viriesuphoto6", img: viriesuPhoto[5], id: 6 },
-]
+  { title: "viriesuphoto1", img: viriesuPhoto[0], id: 1 },
+  { title: "viriesuphoto2", img: viriesuPhoto[1], id: 2 },
+  { title: "viriesuphoto3", img: viriesuPhoto[2], id: 3 },
+  { title: "viriesuphoto4", img: viriesuPhoto[3], id: 4 },
+  { title: "viriesuphoto5", img: viriesuPhoto[4], id: 5 },
+  { title: "viriesuphoto6", img: viriesuPhoto[5], id: 6 },
+];
 
 //Pasakumu photo
 
 export const pasakumuData = [
-    { title: "viriesuphoto1", img: pasakumuPhoto[0], id: 1 },
-    { title: "viriesuphoto2", img: pasakumuPhoto[1], id: 2 },
-    { title: "viriesuphoto3", img: pasakumuPhoto[2], id: 3 },
-    { title: "viriesuphoto4", img: pasakumuPhoto[3], id: 4 },
-    { title: "viriesuphoto5", img: pasakumuPhoto[4], id: 5 },
-    { title: "viriesuphoto6", img: pasakumuPhoto[5], id: 6 },
-]
+  { title: "viriesuphoto1", img: pasakumuPhoto[0], id: 1 },
+  { title: "viriesuphoto2", img: pasakumuPhoto[1], id: 2 },
+  { title: "viriesuphoto3", img: pasakumuPhoto[2], id: 3 },
+  { title: "viriesuphoto4", img: pasakumuPhoto[3], id: 4 },
+  { title: "viriesuphoto5", img: pasakumuPhoto[4], id: 5 },
+  { title: "viriesuphoto6", img: pasakumuPhoto[5], id: 6 },
+];
 
 //Love photo
 
 export const loveData = [
-    { title: "lovephoto1", img: lovePhoto[0], id: 1 },
-    { title: "lovephoto2", img: lovePhoto[1], id: 2 },
-    { title: "lovephoto3", img: lovePhoto[2], id: 3 },
-    { title: "lovephoto4", img: lovePhoto[3], id: 4 },
-    { title: "lovephoto5", img: lovePhoto[4], id: 5 },
-    { title: "lovephoto6", img: lovePhoto[5], id: 6 },
-]
+  { title: "lovephoto1", img: lovePhoto[0], id: 1 },
+  { title: "lovephoto2", img: lovePhoto[1], id: 2 },
+  { title: "lovephoto3", img: lovePhoto[2], id: 3 },
+  { title: "lovephoto4", img: lovePhoto[3], id: 4 },
+  { title: "lovephoto5", img: lovePhoto[4], id: 5 },
+  { title: "lovephoto6", img: lovePhoto[5], id: 6 },
+];
 
 //Gimene photo
 
 export const gimenesData = [
-    { title: "gimenesphoto1", img: gimenesPhoto[0], id: 1 },
-    { title: "gimenesphoto2", img: gimenesPhoto[1], id: 2 },
-    { title: "gimenesphoto3", img: gimenesPhoto[2], id: 3 },
-    { title: "gimenesphoto4", img: gimenesPhoto[3], id: 4 },
-    { title: "gimenesphoto5", img: gimenesPhoto[4], id: 5 },
-    { title: "gimenesphoto6", img: gimenesPhoto[5], id: 6 },
- 
-]
+  { title: "gimenesphoto1", img: gimenesPhoto[0], id: 1 },
+  { title: "gimenesphoto2", img: gimenesPhoto[1], id: 2 },
+  { title: "gimenesphoto3", img: gimenesPhoto[2], id: 3 },
+  { title: "gimenesphoto4", img: gimenesPhoto[3], id: 4 },
+  { title: "gimenesphoto5", img: gimenesPhoto[4], id: 5 },
+  { title: "gimenesphoto6", img: gimenesPhoto[5], id: 6 },
+];
 
 //Sasniegumi photo
+export const sasniegumi2Photo = [
+  { title: "sasniegumiphoto1", img: sasniegumuPhoto[0], id: 1 },
+  { title: "sasniegumiphoto2", img: sasniegumuPhoto[1], id: 2 },
+];
 
 export const sasniegumiData = [
-    { title: "sasniegumiphoto1", img: sasniegumuPhoto[0], id: 1 },
-    { title: "sasniegumiphoto2", img: sasniegumuPhoto[1], id: 2 },
-    { title: "sasniegumiphoto3", img: sasniegumuPhoto[2], id: 3 },
-    { title: "sasniegumiphoto4", img: sasniegumuPhoto[3], id: 4 },
-    { title: "sasniegumiphoto5", img: sasniegumuPhoto[4], id: 5 },
-]
+  { title: "sasniegumiphoto3", img: sasniegumuPhoto[2], id: 3 },
+  { title: "sasniegumiphoto4", img: sasniegumuPhoto[3], id: 4 },
+  { title: "sasniegumiphoto5", img: sasniegumuPhoto[4], id: 5 },
+];

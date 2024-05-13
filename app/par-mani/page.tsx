@@ -4,7 +4,7 @@ import IMG from "./about.jpeg";
 const About = () => {
 
   return (
-    <div className="es:my-10 mx-5 md:mx-10 mb-5 h-full flex gap-5 es:flex-col md:flex-row justify-center items-center">
+    <div className="es:my-10 flex-col mx-5 md:mx-10 mb-5 h-full flex gap-5 es: md:flex-row justify-center items-center">
     <div className="es:mt-10 w-1/2 h-[600px] md:max-w-[550px] mr-5 flex justify-center flex-col items-center">
      
           <h2 className="text-xl font-bold">
