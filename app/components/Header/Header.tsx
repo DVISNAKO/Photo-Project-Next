@@ -6,14 +6,15 @@ import LOGO from "./logo.png";
 type MenuType = {
     id: number,
     title: string
+    url: string
 }
 
 const menu: MenuType[] = [
-  { id: 1, title: "GALERIJA" },
-  { id: 2, title: "PAR MANI" },
-  { id: 3, title: "KONTAKTI" },
-  { id: 4, title: "SASNIEGUMI" },
-  { id: 5, title: "RUS" },
+  { id: 1, title: "GALERIJA", url: '/' },
+  { id: 2, title: "PAR MANI", url: 'par-mani'},
+  { id: 3, title: "KONTAKTI", url:'kontakti' },
+  { id: 4, title: "SASNIEGUMI", url: 'sasniegumi' },
+  { id: 5, title: "RUS", url: '/'},
 ];
 
 const Header = () => {
@@ -25,7 +26,7 @@ const Header = () => {
         </Link>
         <div className="hidden sm:flex flex-row gap-2">
             {menu.map((item) => (
-                <Link href='/' key={item.id}>{item.title}</Link>
+                <Link href={item.url} key={item.id}>{item.title}</Link>
             ))}
         </div>
       </div>

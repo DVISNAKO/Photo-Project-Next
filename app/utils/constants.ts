@@ -1,4 +1,4 @@
-import { dzivniekuPhoto, galeryPhoto, gimenesPhoto, lovePhoto, pasakumuPhoto, viriesuPhoto } from "./const-images";
+import { dzivniekuPhoto, galeryPhoto, gimenesPhoto, lovePhoto, pasakumuPhoto, sasniegumuPhoto, viriesuPhoto } from "./const-images";
 import { sieviešuPhoto } from "./const-images";
 
 export const galeryData = [
@@ -107,4 +107,14 @@ export const gimenesData = [
     { title: "gimenesphoto5", img: gimenesPhoto[4], id: 5 },
     { title: "gimenesphoto6", img: gimenesPhoto[5], id: 6 },
  
+]
+
+//Sasniegumi photo
+
+export const sasniegumiData = [
+    { title: "sasniegumiphoto1", img: sasniegumuPhoto[0], id: 1 },
+    { title: "sasniegumiphoto2", img: sasniegumuPhoto[1], id: 2 },
+    { title: "sasniegumiphoto3", img: sasniegumuPhoto[2], id: 3 },
+    { title: "sasniegumiphoto4", img: sasniegumuPhoto[3], id: 4 },
+    { title: "sasniegumiphoto5", img: sasniegumuPhoto[4], id: 5 },
 ]

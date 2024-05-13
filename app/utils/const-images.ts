@@ -74,3 +74,14 @@ import IMG5G from "../image/Gimenes/g5.jpeg";
 import IMG6G from "../image/Gimenes/g6.jpeg";
 
 export const gimenesPhoto = [IMG1G, IMG2G, IMG3G, IMG4G, IMG5G, IMG6G];
+
+
+//Sasniegumi photo
+
+import IMG1SA from '../image/Sasniegumi/sa1.jpeg';
+import IMG2SA from '../image/Sasniegumi/sa2.jpeg';
+import IMG3SA from '../image/Sasniegumi/sa3.jpeg';
+import IMG4SA from '../image/Sasniegumi/sa4.jpeg';
+import IMG5SA from '../image/Sasniegumi/sa5.jpeg';
+
+export const sasniegumuPhoto = [IMG1SA, IMG2SA, IMG3SA, IMG4SA, IMG5SA]
