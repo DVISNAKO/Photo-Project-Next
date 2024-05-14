@@ -4,13 +4,16 @@ import Link from "@/node_modules/next/link";
 import React, { FC, useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { CiMenuFries } from "react-icons/ci";
+import ToogleLanguage from "../ToogleLanguage/ToogleLanguage";
 import { MenuType } from "./Header";
 
 interface MenuProps {
   menu: MenuType[];
+  language: boolean;
+  setLanguage: (value: boolean) => void;
 }
 
-const BurgerMenu: FC<MenuProps> = ({ menu }) => {
+const BurgerMenu: FC<MenuProps> = ({ menu, language, setLanguage }) => {
   const [toggle, setToggle] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
@@ -34,31 +37,31 @@ const BurgerMenu: FC<MenuProps> = ({ menu }) => {
         } `}
       >
         <div className="absolute top-0 bottom-0 right-0 bg-gradient-to-r from-rose-300 to-pink-500 w-screen">
-    <div className="flex mt-5 ml-20 gap-6 items-start flex-col">
-          <CiMenuFries
-            className="text-[30px]"
-            onClick={() => setToggle(!toggle)}
-          />
+          <div className="flex mt-5 ml-20 gap-6 items-start flex-col">
+            <CiMenuFries
+              className="text-[30px]"
+              onClick={() => setToggle(!toggle)}
+            />
 
-          <>
-            {menu.map((item) => (
-              <Link
-                onClick={() => handleMenuClick(item.title)}
-                href={item.url}
-                className={`mr-2 hover:underline underline-offset-1 ${
-                  activeMenu === item.title ? "text-pink-200" : ""
-                }`}
-                key={item.id}
-              >
-                {item.title}
-              </Link>
-            ))}
-            <button>RUS</button>
-          </>
+            <>
+              {menu.map((item) => (
+                <Link
+                  onClick={() => handleMenuClick(item.title)}
+                  href={item.url}
+                  className={`mr-2 hover:underline underline-offset-1 ${
+                    activeMenu === item.title ? "text-pink-200" : ""
+                  }`}
+                  key={item.id}
+                >
+                  {language ? <>{item.title}</> : <>{item.titleRus}</>}
+                </Link>
+              ))}
+              <button onClick={() => setLanguage(!language)}>
+                {language ? <>RUS</> : <>LAT</>}
+              </button>
+            </>
+          </div>
         </div>
-        </div>
-
-    
       </div>
     </div>
   );

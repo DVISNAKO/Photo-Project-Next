@@ -2,12 +2,13 @@ import Image from "@/node_modules/next/image";
 import React from "react";
 import ButtonBack from "../components/ButtonBack/ButtonBack";
 import { gimenesData } from "../utils/constants";
+import { LanguageProps } from "../utils/type";
 
-const GimenesPage = () => {
+const GimenesPage = ({language }:LanguageProps) => {
   return (
     <div className="flex justify-center items-center w-full h-full flex-col mx-5">
       <div className="flex flex-col items-center my-6 text-[30px]">
-        <h2 className="my-5">ĢIMENES FOTOSESIJA</h2>
+        <h2 className="my-5">{language ? <>ĢIMENES FOTOSESIJA</> : <>СЕМЕЙНЫЕ ФОТО</>}</h2>
         <div className="flex flex-wrap justify-center items-center gap-5 mb-5 mx-5 ">
           {gimenesData.map((item) => (
             <Image
@@ -20,7 +21,7 @@ const GimenesPage = () => {
         </div>
       </div>
       <div className="mb-5 hover:text-var(--color-pink)">
-        <ButtonBack />
+        <ButtonBack language={language}/>
       </div>
     </div>
   );

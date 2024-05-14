@@ -1,11 +1,7 @@
 'use client';
 
+import { LanguageProps } from '@/app/utils/type';
 import React, { useState } from 'react';
-
-interface LanguageProps {
-    language: boolean;
-    setLanguage: (value: boolean) => void;
-}
 
 const ToogleLanguage = ({language, setLanguage }:LanguageProps) => {
     const storedLanguage = typeof window !== 'undefined' ? localStorage.getItem("languageStatus") : null;
@@ -19,7 +15,7 @@ const ToogleLanguage = ({language, setLanguage }:LanguageProps) => {
 
     return (
         <div onClick={toggleLanguage}>
-            RUS
+           {language ? <>RUS</> : <>LAT</>}
         </div>
     );
 };

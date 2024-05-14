@@ -4,6 +4,7 @@ import LOGO from "./logo.png";
 
 import BurgerMenu from "./BurgerMenu";
 import ToogleLanguage from "../ToogleLanguage/ToogleLanguage";
+import { LanguageProps } from "@/app/utils/type";
 
 
 export type MenuType = {
@@ -20,11 +21,6 @@ const menu: MenuType[] = [
   { id: 4, title: " SASNIEGUMI", url: 'sasniegumi', titleRus: ' ДОСТЯЖЕНИЯ'},
 ];
 
-
-interface LanguageProps {
-    language: boolean;
-    setLanguage: (value: boolean) => void;
-}
 
 const Header = ({language, setLanguage }:LanguageProps) => {
 
@@ -52,7 +48,7 @@ const Header = ({language, setLanguage }:LanguageProps) => {
         </div>
                 
         <>
-            <BurgerMenu menu={menu}/>
+            <BurgerMenu menu={menu} language={language} setLanguage={setLanguage}/>
         </>
       
      </nav>
