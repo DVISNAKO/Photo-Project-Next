@@ -10,17 +10,15 @@ import { MenuType } from "./Header";
 interface MenuProps {
   menu: MenuType[];
   language: boolean;
-  setLanguage: (value: boolean) => void;
+  setLanguage?: (value: boolean) => void;
+  activeMenu?: string | null;
+  setActiveMenu: (value: string) => void;
+  toggle: boolean;
+  setToggle: (value: boolean) => void;
+  handleMenuClick: ()=>void;
 }
 
-const BurgerMenu: FC<MenuProps> = ({ menu, language, setLanguage }) => {
-  const [toggle, setToggle] = useState(false);
-  const [activeMenu, setActiveMenu] = useState<string | null>(null);
-
-  const handleMenuClick = (title: string) => {
-    setActiveMenu(title);
-    setToggle(false);
-  };
+const BurgerMenu: FC<MenuProps> = ({ menu, language, setLanguage, activeMenu, setActiveMenu, toggle, setToggle, handleMenuClick}) => {
 
   return (
     <div className="sm:hidden flex flex-1 justify-end items-end mr-5 flex-col">

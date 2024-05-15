@@ -27,7 +27,7 @@ export default function RootLayout({
     <LanguageState.Provider value={{ language, setLanguage }}>
       <html lang="en">
         <body className={inter.className}>
-          <Header language={language} setLanguage={setLanguage}/>
+          <Header language={language} setLanguage={setLanguage} />
           {children}
           <Footer/>
         </body>
