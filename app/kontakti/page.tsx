@@ -1,12 +1,15 @@
+'use client'
+
 import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
-import React from "react";
+import React, { useContext } from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTiktokLine } from "react-icons/ri";
 import IMG from '../image/Kontakti/contact.jpeg'
-import { LanguageProps } from "../utils/type";
+import { LanguageState } from "../utils/context";
 
-const Contacts = ({ language }: LanguageProps) => {
+const Contacts = () => {
+  const {language, setLanguage} = useContext(LanguageState);
   return (
     <div className="es:flex-col justify-center md:flex items-center my-10 w-screen gap-10">
       <div className="flex justify-center items-center flex-col text-nowrap  p-4">
