@@ -1,9 +1,11 @@
-import { LanguageProps } from "@/app/utils/type";
+'use client'
+
+import { LanguageState } from "@/app/utils/context";
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 
-
-const ButtonBack = ({language }:LanguageProps) => {
+const ButtonBack = () => {
+    const {language, setLanguage} = useContext(LanguageState);
     return (
         <Link href="/">
             <button className="m-2 border-2 p-3 rounded-xl">

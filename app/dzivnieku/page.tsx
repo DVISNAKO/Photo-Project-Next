@@ -1,14 +1,15 @@
 import Image from '@/node_modules/next/image';
 import React from 'react';
 import ButtonBack from '../components/ButtonBack/ButtonBack';
+import Title from '../components/Title/Title';
 import { DzivniekuData } from '../utils/constants';
-import { LanguageProps } from '../utils/type';
 
-const DzivniekuPage = ({language }:LanguageProps) => {
+
+const DzivniekuPage = () => {
     return (
         <div className="flex justify-center items-center w-full h-full flex-col mx-5">
         <div className="flex flex-col items-center my-6 text-[30px]">
-          <h2 className="my-5">{language ? <>DZĪVNIEKU FOTO</> : <>ФОТО ЖИВОТНЫХ</>}</h2>
+          <Title titleLV="DZĪVNIEKU FOTO" titleRus="ФОТО ЖИВОТНЫХ"/>
           <div className="flex flex-wrap justify-center items-center gap-5 mb-5 mx-5 ">
             {DzivniekuData.map((item) => (
               <Image
@@ -21,7 +22,7 @@ const DzivniekuPage = ({language }:LanguageProps) => {
           </div>
         </div>
         <div className="mb-5 hover:text-var(--color-pink)">
-          <ButtonBack language={language}/>
+          <ButtonBack/>
         </div>
       </div>
     );

@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const [language, setLanguage] = useState<boolean>(false);
+  const [language, setLanguage] = useState<boolean>(true);
 
   return (
     <LanguageState.Provider value={{ language, setLanguage }}>
@@ -29,7 +29,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Header language={language} setLanguage={setLanguage} />
           {children}
-          <Footer/>
+          <Footer language={language} setLanguage={setLanguage}/>
         </body>
       </html>
     </LanguageState.Provider>

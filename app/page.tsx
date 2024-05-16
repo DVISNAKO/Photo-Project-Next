@@ -1,13 +1,13 @@
+'use client'
+
 import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
+import { useContext } from "react";
 import { galeryData } from "./utils/constants";
+import { LanguageState } from "./utils/context";
 
-interface LanguageProps {
-  language: boolean;
-  setLanguage: (value: boolean) => void;
-}
-
-export default function GAlerijaPage({ language, setLanguage }: LanguageProps) {
+export default function GAlerijaPage() {
+  const {language, setLanguage} = useContext(LanguageState);
 
   return (
     <div className="flex justify-center items-center h-full my-10 flex-wrap gap-5 mx-10 border-black">

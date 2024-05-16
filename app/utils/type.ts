@@ -1,4 +1,4 @@
 export interface LanguageProps {
     language: boolean;
-    setLanguage?: (value: boolean) => void;
+    setLanguage: (value: boolean) => void;
 }
