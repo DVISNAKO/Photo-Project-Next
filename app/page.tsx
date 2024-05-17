@@ -3,6 +3,7 @@
 import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
 import { useContext } from "react";
+import GaleryTitle from "./components/GaleryTitle/GaleryTitle";
 import { galeryData } from "./utils/constants";
 import { LanguageState } from "./utils/context";
 
@@ -23,9 +24,13 @@ export default function GAlerijaPage() {
                 alt={item.title}
               />
           </Link>
-          <h2 className="flex justify-center mt-5">
-            {language ? <>{item.title}</> : <>{item.titleRus}</>}
-          </h2>
+          <h2 className="text-xl text-center mt-2">
+        {language ? (
+          <>{item.title}</>
+        ) : (
+          <>{item.titleRus}</>
+        )}
+      </h2>
         </div>
       ))}
     </div>

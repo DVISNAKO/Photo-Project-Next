@@ -1,27 +1,33 @@
-'use client'
-
 import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
 import React, { useContext } from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTiktokLine } from "react-icons/ri";
 import IMG from '../image/Kontakti/contact.jpeg'
-import { LanguageState } from "../utils/context";
+import ContactBtn from "./ContactBtn";
+import ContactSoc from "./ContactSoc";
+import ContactTitle from "./ContactTitle";
 
 const Contacts = () => {
-  const {language, setLanguage} = useContext(LanguageState);
+
+  const btnLV = 'Saziņai telegramā';
+  const btnRus = 'Написать в телеграм';
+
+  const titleLV = 'MY CONTACTS:';
+  const titelRUS = 'МОИ КОНТАКТЫ:';
+
+  const socTitleLV ='MANI SOCIĀLIE TĪKLI'; 
+  const socTitleRus ='МОИ СОЦ. СЕТИ:'; 
+
+
   return (
     <div className="es:flex-col justify-center md:flex items-center my-10 w-screen gap-10">
       <div className="flex justify-center items-center flex-col text-nowrap  p-4">
-        <h2 className="m-2 text-[25px]">{language ? <>MY CONTACTS:</> : <>МОИ КОНТАКТЫ:</>}</h2>
+        <ContactTitle titleLV={titleLV} titelRUS={titelRUS}/>
         <h2 className="m-2"> lai13@inbox.lv</h2>
-        <h2 className="m-2 border-2 p-3 rounded-xl hover:bg-slate-400">
-          <Link target="_blank" href="https://t.me/lainevolcite">
-            {language ? <> Saziņai telegramā</> : <>Написать в телеграм</>}
-          </Link>
-        </h2>
+        <ContactBtn btnLV={btnLV} btnRus={btnRus}/>
         <hr className="h-1 w-20 m-3" />
-        <h2 className="m-2 text-[25px]">{language ? <>MANI SOCIĀLIE TĪKLI</> : <>МОИ СОЦ. СЕТИ:</>}</h2>
+        <ContactSoc socTitleLV={socTitleLV} socTitleRus={socTitleRus}/>
         <div className="flex gap-1 ml-3 cursor-pointer">
           <div className="hover:bg-slate-400 rounded-xl p-3 text-[30px]">
             <Link
