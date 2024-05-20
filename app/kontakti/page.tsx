@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTiktokLine } from "react-icons/ri";
 import IMG from '../image/Kontakti/contact.jpeg'
+import { Instagram, Tiktok } from "../utils/link";
 import ContactBtn from "./ContactBtn";
 import ContactSoc from "./ContactSoc";
 import ContactTitle from "./ContactTitle";
@@ -32,7 +33,7 @@ const Contacts = () => {
           <div className="hover:bg-slate-400 rounded-xl p-3 text-[30px]">
             <Link
               target="_blank"
-              href="https://www.instagram.com/volcites_photos?igsh=cnJuam13anZtaGJ0&utm_source=qr"
+              href={Instagram}
             >
               <FaInstagram />
             </Link>
@@ -40,7 +41,7 @@ const Contacts = () => {
           <div className="hover:bg-slate-400 rounded-xl p-3 text-[30px]">
             <Link
               target="_blank"
-              href="https://tiktok.com/@volcites_photos?_t=8kGdMatiX4L&_r=1"
+              href={Tiktok}
             >
               <RiTiktokLine />
             </Link>

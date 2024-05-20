@@ -3,6 +3,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { RiTiktokLine } from "react-icons/ri";
 import { LanguageProps } from "@/app/utils/type";
+import { Instagram, Tiktok } from "@/app/utils/link";
+import Link from "@/node_modules/next/link";
 
 
 const Footer = ({language }:LanguageProps) => {
@@ -12,25 +14,25 @@ const Footer = ({language }:LanguageProps) => {
       <h2> {language ? <>SOCIĀLIE TĪKLI </>: <>СОЦИАЛЬНЫЕ СЕТИ</>}</h2>
       <div className="flex gap-1 ml-3 cursor-pointer">
         <div className="hover:bg-slate-400 rounded-xl p-3">
-          <a
+          <Link
             target="_blank"
-            href="https://www.instagram.com/volcites_photos?igsh=cnJuam13anZtaGJ0&utm_source=qr"
+            href={Instagram}
           >
             <FaInstagram />
-          </a>
+          </Link>
         </div>
         <div className="hover:bg-slate-400 rounded-xl p-3">
-          <a target="_blank" href="https://t.me/lainevolcite">
+          <Link target="_blank" href="https://t.me/lainevolcite">
             <FaTelegramPlane />
-          </a>
+          </Link>
         </div>
         <div className="hover:bg-slate-400 rounded-xl p-3">
-          <a
+          <Link
             target="_blank"
-            href="https://tiktok.com/@volcites_photos?_t=8kGdMatiX4L&_r=1"
+            href={Tiktok}
           >
             <RiTiktokLine />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
