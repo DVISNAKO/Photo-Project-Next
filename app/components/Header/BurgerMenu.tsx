@@ -10,12 +10,12 @@ import { MenuType } from "./Header";
 interface MenuProps {
   menu: MenuType[];
   language: boolean;
-  setLanguage?: (value: boolean) => void;
+  setLanguage: (value: boolean) => void;
   activeMenu?: string | null;
   setActiveMenu: (value: string) => void;
   toggle: boolean;
   setToggle: (value: boolean) => void;
-  handleMenuClick: ()=>void;
+  handleMenuClick: (title: string) => void;
 }
 
 const BurgerMenu: FC<MenuProps> = ({ menu, language, setLanguage, activeMenu, setActiveMenu, toggle, setToggle, handleMenuClick}) => {

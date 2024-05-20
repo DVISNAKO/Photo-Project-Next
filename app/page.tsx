@@ -3,7 +3,6 @@
 import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
 import { useContext } from "react";
-import GaleryTitle from "./components/GaleryTitle/GaleryTitle";
 import { galeryData } from "./utils/constants";
 import { LanguageState } from "./utils/context";
 

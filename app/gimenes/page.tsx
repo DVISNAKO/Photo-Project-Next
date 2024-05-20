@@ -1,7 +1,8 @@
 import Image from "@/node_modules/next/image";
 import React from "react";
 import ButtonBack from "../components/ButtonBack/ButtonBack";
-import Title from "../components/Title/Title";
+import Title from "../components/PageTitle/Title";
+
 import { gimenesData } from "../utils/constants";
 
 const GimenesPage = () => {

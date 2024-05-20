@@ -1,11 +1,11 @@
 import Image from "@/node_modules/next/image";
 import React from "react";
 import ButtonBack from "../components/ButtonBack/ButtonBack";
-import Title from "../components/Title/Title";
+import Title from "../components/PageTitle/Title";
 import { SieviešuData } from "../utils/constants";
-import { LanguageProps } from "../utils/type";
 
-const SieviešuPage = ({ language, setLanguage }:LanguageProps) => {
+
+const SieviešuPage = () => {
   return (
     <div className="flex justify-center items-center w-full h-full flex-col mx-5">
       <div className="flex flex-col items-center my-6 text-[30px]">
