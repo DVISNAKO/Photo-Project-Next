@@ -11,7 +11,7 @@ const Footer = ({language }:LanguageProps) => {
  
   return (
     <div className="w-full flex justify-center items-center text-[25px] mt-auto h-20 bg-gradient-to-r from-rose-300 to-pink-500">
-      <h2> {language ? <>SOCIĀLIE TĪKLI </>: <>СОЦИАЛЬНЫЕ СЕТИ</>}</h2>
+      <h2 className="flex text-center"> {language ? <>SOCIĀLIE TĪKLI </>: <>СОЦИАЛЬНЫЕ СЕТИ</>}</h2>
       <div className="flex gap-1 ml-3 cursor-pointer">
         <div className="hover:bg-slate-400 rounded-xl p-3">
           <Link
