@@ -11,7 +11,7 @@ const About = () => {
   const descRus = ' Я закончила Резекненскую среднюю школу искусства и дизайна, где получила квалификацию – специалист по фотодизайну. Я до сих пор считаю себя начинающим фотографом. Я люблю экспериментировать в фотографии, я не фанат обычных, искусственных фотографий, которые есть у каждого второго в рамке где-нибудь дома.'
 
   return (
-    <div className="es:my-10 flex-col mx-5 md:mx-10 mb-5 h-full flex gap-5 es: md:flex-row justify-center items-center">
+    <div className="es:my-6 flex-col mx-5 md:mx-10 mb-5 h-full flex gap-5 es: md:flex-row justify-center items-center">
       <div className="es:mt-10 w-1/2 h-[600px] md:max-w-[550px] mr-5 flex justify-center flex-col items-center">
       <AboutTitle titleLV={titleLV} titleRus={titleRus}/>
         <br />
