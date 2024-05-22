@@ -22,7 +22,7 @@ const Contacts = () => {
 
 
   return (
-    <div className="es:flex-col justify-center md:flex items-center my-10 w-screen gap-10">
+    <div className="justify-center md:flex flex-row items-center my-10 w-screen gap-10">
       <div className="flex justify-center items-center flex-col text-nowrap  p-4">
         <ContactTitle titleLV={titleLV} titelRUS={titelRUS}/>
         <h2 className="m-2"> lai13@inbox.lv</h2>
