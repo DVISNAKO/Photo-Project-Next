@@ -3,46 +3,38 @@ import Link from "@/node_modules/next/link";
 import React, { useContext } from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTiktokLine } from "react-icons/ri";
-import IMG from '../image/Kontakti/contact.jpeg'
+import IMG from "../image/Kontakti/IMG_3891_3.jpg";
 import { Instagram, Tiktok } from "../utils/link";
 import ContactBtn from "./ContactBtn";
 import ContactSoc from "./ContactSoc";
 import ContactTitle from "./ContactTitle";
 
 const Contacts = () => {
+  const btnLV = "Saziņai telegramā";
+  const btnRus = "Написать в телеграм";
 
-  const btnLV = 'Saziņai telegramā';
-  const btnRus = 'Написать в телеграм';
+  const titleLV = "MY CONTACTS:";
+  const titelRUS = "МОИ КОНТАКТЫ:";
 
-  const titleLV = 'MY CONTACTS:';
-  const titelRUS = 'МОИ КОНТАКТЫ:';
-
-  const socTitleLV ='MANI SOCIĀLIE TĪKLI'; 
-  const socTitleRus ='МОИ СОЦ. СЕТИ:'; 
-
+  const socTitleLV = "MANI SOCIĀLIE TĪKLI";
+  const socTitleRus = "МОИ СОЦ. СЕТИ:";
 
   return (
     <div className="justify-center md:flex flex-row items-center my-10 w-screen gap-10">
       <div className="flex justify-center items-center flex-col text-nowrap  p-4">
-        <ContactTitle titleLV={titleLV} titelRUS={titelRUS}/>
+        <ContactTitle titleLV={titleLV} titelRUS={titelRUS} />
         <h2 className="m-2"> lai13@inbox.lv</h2>
-        <ContactBtn btnLV={btnLV} btnRus={btnRus}/>
+        <ContactBtn btnLV={btnLV} btnRus={btnRus} />
         <hr className="h-1 w-20 m-3" />
-        <ContactSoc socTitleLV={socTitleLV} socTitleRus={socTitleRus}/>
+        <ContactSoc socTitleLV={socTitleLV} socTitleRus={socTitleRus} />
         <div className="flex gap-1 ml-3 cursor-pointer">
           <div className="hover:bg-slate-400 rounded-xl p-3 text-[30px]">
-            <Link
-              target="_blank"
-              href={Instagram}
-            >
+            <Link target="_blank" href={Instagram}>
               <FaInstagram />
             </Link>
           </div>
           <div className="hover:bg-slate-400 rounded-xl p-3 text-[30px]">
-            <Link
-              target="_blank"
-              href={Tiktok}
-            >
+            <Link target="_blank" href={Tiktok}>
               <RiTiktokLine />
             </Link>
           </div>
@@ -52,7 +44,7 @@ const Contacts = () => {
         <Image
           className="h-[600px] w-[500px] object-cover hover:translate-y-2"
           src={IMG}
-          alt='foto'
+          alt="foto"
         />
       </div>
     </div>
