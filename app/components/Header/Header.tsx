@@ -1,9 +1,6 @@
 "use client";
 
-import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
-import LOGO from "./logo.png";
-import styles from "./Header.module.css";
 import BurgerMenu from "./BurgerMenu";
 import ToogleLanguage from "../ToogleLanguage/ToogleLanguage";
 import { LanguageProps } from "@/app/utils/type";
@@ -17,8 +14,8 @@ export type MenuType = {
 };
 
 const menu: MenuType[] = [
-  { id: 0, title: " SAKUMS", url: "/", titleRus: " НАЧАЛО" },
-  { id: 1, title: " GALEREJA", url: "galereja", titleRus: " ГАЛЕРЕЯ" },
+  { id: 0, title: " SĀKUMS", url: "/", titleRus: " НАЧАЛО" },
+  { id: 1, title: " GALERIJA", url: "galerija", titleRus: " ГАЛЕРЕЯ" },
   { id: 2, title: " PAR MANI", url: "par-mani", titleRus: " ОБО МНЕ" },
   { id: 3, title: " KONTAKTI", url: "kontakti", titleRus: " КОНТАКТЫ" },
   { id: 4, title: " SASNIEGUMI", url: "sasniegumi", titleRus: " ДОСТЯЖЕНИЯ" },

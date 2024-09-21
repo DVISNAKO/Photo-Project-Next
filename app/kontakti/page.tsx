@@ -48,7 +48,7 @@ const Contacts = () => {
       </div>
       <div className="flex justify-center items-center mx-5">
         <Image
-          className="h-[400px] w-[600px] object-cover hover:translate-y-2 rotate-6"
+          className="es:h-[300px] md:h-[400px] w-[600px] object-cover hover:translate-y-2 rotate-6"
           src={IMG}
           alt="foto"
         />

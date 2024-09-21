@@ -8,9 +8,9 @@ const About = () => {
   const titleLV = "PAR MANI";
   const titleRus = "ОБО МНЕ!";
   const descLV =
-    " Es esmu pabeigusi Rēzeknes Mākslas un dizaina vidusskolu, kurā ieguvu kvalifikāciju - foto dizaina speciālists. Pati sevi vēl joprojām uzskatu par fotogrāfu iesācēju. Fotogrāfijā man patīk eksperimentēt, neesmu fans ierastajām, mākslīgajām bildēm, kuras kaut kur mājās rāmītī ir katram otrajam.";
+    " Es esmu pabeigusi Rēzeknes Mākslas un dizaina vidusskolu, kurā ieguvu kvalifikāciju - foto dizaina speciālists. Fotogrāfijā man patīk eksperimentēt, neesmu fans ierastajām, mākslīgajām bildēm, kuras kaut kur mājās rāmītī ir katram otrajam.";
   const descRus =
-    " Я закончила Резекненскую среднюю школу искусства и дизайна, где получила квалификацию – специалист по фотодизайну. Я до сих пор считаю себя начинающим фотографом. Я люблю экспериментировать в фотографии, я не фанат обычных, искусственных фотографий, которые есть у каждого второго в рамке где-нибудь дома.";
+    " Я закончила Резекненскую среднюю школу искусства и дизайна, где получила квалификацию – специалист по фотодизайну. Я люблю экспериментировать в фотографии, я не фанат обычных, искусственных фотографий, которые есть у каждого второго в рамке где-нибудь дома.";
 
   return (
     <div className="es:my-6 mr-12 flex-col md:mx-10 mb-5 flex es: md:flex-row justify-center items-center">

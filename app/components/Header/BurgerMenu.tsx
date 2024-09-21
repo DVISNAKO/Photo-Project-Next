@@ -4,7 +4,6 @@ import Link from "@/node_modules/next/link";
 import React, { FC, useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { CiMenuFries } from "react-icons/ci";
-import ToogleLanguage from "../ToogleLanguage/ToogleLanguage";
 import { MenuType } from "./Header";
 
 interface MenuProps {
