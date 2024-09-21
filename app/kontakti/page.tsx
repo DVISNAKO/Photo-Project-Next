@@ -3,8 +3,9 @@ import Link from "@/node_modules/next/link";
 import React, { useContext } from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { RiTiktokLine } from "react-icons/ri";
+import { FaFacebookF } from "react-icons/fa";
 import IMG from "../image/Kontakti/IMG_3891_3.jpg";
-import { Instagram, Tiktok } from "../utils/link";
+import { Facebook, Instagram, Tiktok } from "../utils/link";
 import ContactBtn from "./ContactBtn";
 import ContactSoc from "./ContactSoc";
 import ContactTitle from "./ContactTitle";
@@ -13,14 +14,14 @@ const Contacts = () => {
   const btnLV = "Saziņai telegramā";
   const btnRus = "Написать в телеграм";
 
-  const titleLV = "MY CONTACTS:";
-  const titelRUS = "МОИ КОНТАКТЫ:";
+  const titleLV = "SAZIŅA AR MANI";
+  const titelRUS = "СВЯЗАТЬСЯ СО МНОЙ";
 
   const socTitleLV = "MANI SOCIĀLIE TĪKLI";
   const socTitleRus = "МОИ СОЦ. СЕТИ:";
 
   return (
-    <div className="justify-center md:flex flex-row items-center my-10 w-screen gap-10">
+    <div className="justify-center md:flex flex-row items-center my-10 w-screen h-screen gap-10">
       <div className="flex justify-center items-center flex-col text-nowrap  p-4">
         <ContactTitle titleLV={titleLV} titelRUS={titelRUS} />
         <h2 className="m-2"> lai13@inbox.lv</h2>
@@ -38,11 +39,16 @@ const Contacts = () => {
               <RiTiktokLine />
             </Link>
           </div>
+          <div className="hover:bg-slate-400 rounded-xl p-3 text-[30px]">
+            <Link target="_blank" href={Facebook}>
+              <FaFacebookF />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center mx-5">
         <Image
-          className="h-[600px] w-[500px] object-cover hover:translate-y-2"
+          className="h-[400px] w-[600px] object-cover hover:translate-y-2 rotate-6"
           src={IMG}
           alt="foto"
         />

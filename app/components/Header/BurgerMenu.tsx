@@ -42,7 +42,7 @@ const BurgerMenu: FC<MenuProps> = ({
           !toggle ? "hidden" : "flex transition ease-in-out delay-1000"
         } `}
       >
-        <div className="absolute top-0 bottom-0 right-0 bg-gradient-to-r from-slate-200 to-slate-400 w-screen z-20">
+        <div className="absolute top-0 bottom-0 right-0 bg-gradient-to-r from-slate-200 to-slate-400 w-screen z-50">
           <div className="flex mt-5 ml-20 gap-6 items-start flex-col">
             <CiMenuFries
               className="text-[30px]"

@@ -12,9 +12,9 @@ export default function GAlerijaPage() {
   return (
     <div className="flex justify-center items-center h-full my-10 flex-wrap gap-5 mx-10 border-black">
       <div className="flex flex-col min-w-[250px] items-center justify-center">
-        <h1 className="z-10 text-7xl">Laine Volcīte</h1>
+        <h1 className="es:text-5xl z-10 md:z-10 text-7xl">Laine Volcīte</h1>
         <Image src={IMG1} alt="foto" className="-rotate-6 w-[450px]" />
-        <h1 className="z-10 text-7xl">PORTFOLIO</h1>
+        <h1 className="es:text-5xl z-10 md:z-10 text-7xl">PORTFOLIO</h1>
         <Title titleLV="FOTOGRĀFS RĒZEKNĒ" titleRus="ФОТОГРАФ ИЗ РЕЗЕКНЕ" />
       </div>
     </div>

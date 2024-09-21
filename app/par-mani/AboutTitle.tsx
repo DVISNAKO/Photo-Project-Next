@@ -11,7 +11,7 @@ interface AboutTitleProps {
 const AboutTitle = ({ titleLV, titleRus }: AboutTitleProps) => {
   const { language, setLanguage } = useContext(LanguageState);
   return (
-    <h2 className=" font-bold text-6xl">
+    <h2 className="font-bold text-6xl">
       {language ? <>{titleLV}</> : <>{titleRus}</>}
     </h2>
   );
