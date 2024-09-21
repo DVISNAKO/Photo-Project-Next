@@ -14,7 +14,7 @@ export default function GAlerijaPage() {
       {galeryData.map((item) => (
         <div
           key={item.title}
-          className="cursor-pointer hover:translate-y-2 hover:text-pink-400 basis-1/4"
+          className="cursor-pointer hover:translate-y-2 hover:text-slate-400 basis-1/4"
         >
           <Link href={item.route}>
             <Image
