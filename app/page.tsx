@@ -7,7 +7,6 @@ import Title from "./components/PageTitle/Title";
 
 export default function GAlerijaPage() {
   const { language, setLanguage } = useContext(LanguageState);
-  const font = { fontFamily: "Playfair Display", fontWeight: 900 };
 
   return (
     <div className="flex justify-center items-center h-screen my-10 flex-wrap gap-5 mx-10 border-black">
