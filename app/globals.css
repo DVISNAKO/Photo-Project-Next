@@ -14,3 +14,10 @@
 :root {
   --color-pink: rgb(251 113 133);
 }
+
+.playfair {
+  font-family: "Playfair Display", serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 900;
+  /* font-style: normal; */
+}
